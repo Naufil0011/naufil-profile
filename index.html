@@ -73,15 +73,22 @@
         <h2>Contact</h2>
         <p>Feel free to reach out to me on social media or through email:</p>
         <div class="social-icons">
-            <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
-            <a href="https://github.com/yourprofile" target="_blank">GitHub</a>
-            <a href="mailto:youremail@example.com">Email</a>
+            <a href="https://linkedin.com/in/naufil-shaikh-developer" target="_blank">LinkedIn</a>
+            <a href="https://github.com/Naufil0011" target="_blank">GitHub</a>
+            <a href="mailto:naufilshaikh708@gmail.com">Email</a>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2023 Your Name. All rights reserved.</p>
+        <p>&copy; <span id="year"></span> Your Name. All rights reserved.</p>
     </footer>
+
+    <script>
+        const startYear = 2024;  // Set your start year here
+        const currentYear = new Date().getFullYear();
+        const yearText = startYear === currentYear ? `${startYear}` : `${startYear} - ${currentYear}`;
+        document.getElementById("year").textContent = yearText;
+    </script>
 </body>
 
 </html>
